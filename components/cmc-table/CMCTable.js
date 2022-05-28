@@ -3,6 +3,7 @@ import btc from '../../assets/btc.png'
 import { CoinMarketContext } from '../../context/Context'
 import CMCTableHeader from './CMCTableHeader'
 import CMCTableRow from './CMCTableRow'
+import DEX from '../DEX'
 
 const CMCTable = () => {
     let { getTopTenCoins } = useContext(CoinMarketContext)
@@ -33,7 +34,7 @@ const CMCTable = () => {
         <div className='mx-auto max-w-screen-2xl'>
             <table className='w-full'>
                 <CMCTableHeader/>
-
+                
                 {coinData && coinData ? (
                     coinData.map((coin,index)=> {
                         console.log(coin.cmc_rank)

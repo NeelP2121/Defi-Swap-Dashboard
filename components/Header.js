@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Search from '../assets/svg/search'
 import { ConnectButton } from 'web3uikit'
+import logo from '../assets/logo.svg'
 // import { useContext } from 'react'
 // import { CoinMarketContext } from '../context/context'
 
@@ -23,9 +24,9 @@ const Header = () => {
     <div className={styles.header}>
       <Image
         alt=''
-        src='https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_white_1.svg'
-        width={220}
-        height={220}
+        src={logo}//'https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_white_1.svg'
+        width={240}
+        height={240}
       />
 
       <div className={styles.headerWrapper}>

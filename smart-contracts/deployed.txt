@@ -1,0 +1,4 @@
+DogeCoin deployed to:  0xc33A73CCebFeb271BDda3faa00C9D3b548eDE106
+Link deployed to:  0x61b165f320Fb269C61B945835451c2145301008b
+Usdc deployed to:  0x44c424dBe91350cf2733Eae55ec2c425790b627b
+Dai deployed to:  0xb7fbd8E44E9eb428B32dEaB4AFa1870a723F0960

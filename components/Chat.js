@@ -1,8 +1,8 @@
 import { useState, useContext, useEffect } from 'react'
 import ChevronDown from '../assets/svg/chevronDown'
 import ChevronUp from '../assets/svg/chevronUp'
-// import { GunContext } from '../context/gunContext'
-// import { faker } from '@faker-js/faker'
+import { GunContext } from '../context/gunContext'
+import { faker } from '@faker-js/faker'
 import ChatCard from './chatCard'
 import Button from './button'
 import shiba from '../assets/shiba.png'
@@ -18,7 +18,6 @@ const styles = {
     chat: `max-w-lg min-w-full`,
     postButtonContainer: `flex align-center justify-end`,
     boldText: `font-bold`,
-
     activeBullishLabel: `flex cursor-pointer bg-green-600 items-center text-white border border-green-600 h-min px-2 rounded-lg`,
     activeBearishLabel: `flex cursor-pointer bg-red-500 items-center text-white border border-red-600 h-min px-2 rounded-lg`,
 }
@@ -89,7 +88,7 @@ const Chat = () => {
                   <Image alt='' src={shiba} width={70} height={70} />
                 </div>
                 <div className='text-left mr-10'>
-                  <b>Drak</b>
+                  <b>Neel</b>
                   <p className='text-gray-400'>@neelabhp</p>
                 </div>
               </div>

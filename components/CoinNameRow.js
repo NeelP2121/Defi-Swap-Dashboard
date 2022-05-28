@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CoinMarketContext } from '../context/Context'
 import Image from 'next/image'
 import btc from '../assets/btc.png'
 import eth from '../assets/eth.png'
@@ -17,6 +18,9 @@ const styles = {
 }
 
 const CoinNameRow = ({name, icon, clicked}) => {
+
+    const {openModal} = useContext(CoinMarketContext)
+
     const coinIcon = () => {
         switch(name) {
             case 'Bitcoin':
@@ -83,7 +87,7 @@ const CoinNameRow = ({name, icon, clicked}) => {
            </div>
            <p>
                {name === 'Bitcoin' || name === 'Ethereum' || name === 'Tether' ? (
-                   <span className={styles.buyButton}>
+                   <span className={styles.buyButton} onClick={()=> openModal()}>
                     Buy
                    </span>
                ) : (

@@ -40,7 +40,7 @@ const ChatCard = ({content='', timestamp, sender, bullish, senderAvatar, likes, 
         <p className={styles.messageContent}>{content}</p>
         <div className={styles.flexBetween}>
             <div className={styles.postAction}>
-                {/* <Comment/> */}
+                <Comment/>
                 <p className={styles.greyText}>{comments}</p>
             </div>
             <div className={styles.postAction}>

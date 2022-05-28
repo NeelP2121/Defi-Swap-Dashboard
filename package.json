@@ -6,8 +6,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@faker-js/faker": "^7.1.0",
     "@walletconnect/web3-provider": "^1.7.4",
     "@web3auth/web3auth": "^0.4.0",
+    "antd": "^4.20.6",
     "chart.js": "^3.7.1",
     "gun": "^0.2020.1235",
     "magic-sdk": "^8.1.0",

@@ -38,7 +38,7 @@ const currencies = () => {
         setPrice(urlParams.get('price'))
 
     }
-
+    console.log('info')
     return (
         <div className={styles.info}>
             <Header />
@@ -85,7 +85,7 @@ const currencies = () => {
                         <CMCpriceConverter from={coinName} fromSymbol={coinSymbol} fromLogo={solana} toLogo={<Usd/>} price={price} to='United States Dollars' toSymbol='USD'/>
                     </div>
                     <div className='pt-10 ml-5'>
-                        {/* <Chat /> */}
+                        <Chat />
                     </div>
                 </div>
             </main>
